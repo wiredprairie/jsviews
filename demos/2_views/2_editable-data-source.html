@@ -62,6 +62,7 @@ $.dataLink( app, function( event, args ) {
 // All dynamic UI changes are a result of 'observable changes' (using built-in data-link templates integration)
 $( "#movieDetail" )
 	.delegate( "#addLanguageBtn", "click", function () {
+        
 		$.changeArray(
 			$.view( this ).data.Languages,
 			"push",
